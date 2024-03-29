@@ -11,10 +11,13 @@ Features
 # Prerequisites
 
 Before running the script, make sure you have the following dependencies installed:
-    * Python 3.x
-    * Selenium WebDriver
-    * Chrome WebDriver (chromedriver) executable in the system PATH
-    *  Required Python packages: os, requests, selenium, transliterate
+ * Python 3.x
+    
+ * Selenium WebDriver
+    
+ * Chrome WebDriver (chromedriver) executable in the system PATH
+    
+ *  Required Python packages: os, requests, selenium, transliterate
 
 # Usage
 
