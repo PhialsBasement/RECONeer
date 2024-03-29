@@ -26,7 +26,7 @@ Before running the script, make sure you have the following dependencies install
 # Usage
 
   1. Clone the repository or download the script file.
-  2. Install the required dependencies by running the following command:
+  2. Install the required dependencies by running the following command:     ```pip install selenium transliterate```
   3. Make sure you have the Chrome WebDriver executable (chromedriver) in your system PATH or in the same directory as the script.
   4. Run the script using the following command:
     ```
