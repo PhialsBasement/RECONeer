@@ -2,11 +2,15 @@
 
 RECONeer is a Python script that performs reconnaissance tasks by searching for PDF files and social media profiles related to a given search query. It utilizes the Selenium WebDriver to automate web browsing and scraping tasks.
 Features
-    * Searches for PDF files related to the provided search query on Google
-    * Supports two types of search: Wide Lookup and Specific Lookup
-    * Downloads the found PDF files and saves them in a directory named "downloaded_pdfs"
-    * Searches for social media profiles (Facebook, Twitter, Instagram, LinkedIn) related to the search query
-    * Prints the URLs of the found social media profiles
+* Searches for PDF files related to the provided search query on Google
+    
+* Supports two types of search: Wide Lookup and Specific Lookup
+
+* Downloads the found PDF files and saves them in a directory named "downloaded_pdfs"
+    
+* Searches for social media profiles (Facebook, Twitter, Instagram, LinkedIn) related to the search query
+    
+* Prints the URLs of the found social media profiles
 
 # Prerequisites
 
