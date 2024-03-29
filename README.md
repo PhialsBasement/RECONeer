@@ -41,7 +41,8 @@ Before running the script, make sure you have the following dependencies install
 # Disclaimer
 
 Please use this script responsibly and in compliance with the terms of service of the websites being scraped. Respect the privacy and intellectual property rights of others.
-License
+
+# License
 
 This project is licensed under the MIT License.
 
