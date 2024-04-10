@@ -62,11 +62,12 @@ Run the RECONeer.py script:
 
 # Acknowledgements
 
-  Anthropic for providing the AI-powered chat interface.
-    Selenium for web scraping functionality.
-    PyPDF2 for PDF extraction and manipulation.
-    colorama for color output in the console.
-    ascii_magic for displaying ASCII art.
+  * Anthropic for providing the AI-powered chat interface.
+  * Selenium for web scraping functionality.
+  * PyPDF2 for PDF extraction and manipulation.
+  * colorama for color output in the console.
+  * ascii_magic for displaying ASCII art.
+  * [https://github.com/tpoff/Python-Gif-Ascii-Animator](GIF to ASCII by tpoff)
 
 # Disclaimer
 
