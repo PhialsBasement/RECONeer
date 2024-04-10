@@ -10,6 +10,8 @@ from colorama import init as colorama_init
 from colorama import Fore
 from colorama import Style
 from ascii_magic import AsciiArt
+import pygame as pg
+pg.mixer.init()
 colorama_init()
 # Function to download PDF files
 my_art = AsciiArt.from_image('untitled-f000056.png')
@@ -22,7 +24,8 @@ def download_pdf(url, filename):
             file.write(response.content)
     except:
         print("Lol")
-
+pg.mixer.music.load("LifeGameAnonCode.mp3")
+pg.mixer.music.play(99)
 # Create a new instance of the Chrome driver
 driver = webdriver.Chrome()
 
@@ -84,7 +87,9 @@ try:
     else:
         print("NO RESULTS FOUND")
 finally:
+    input("Continue to AI Chat")
     print("OPENING AI CHAT")
     os.system('python RECONeerChat.py')
     # Close the browser
     driver.quit()
+    input()
