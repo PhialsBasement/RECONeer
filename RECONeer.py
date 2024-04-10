@@ -84,5 +84,7 @@ try:
     else:
         print("NO RESULTS FOUND")
 finally:
+    print("OPENING AI CHAT")
+    os.system('python RECONeerChat.py')
     # Close the browser
     driver.quit()
