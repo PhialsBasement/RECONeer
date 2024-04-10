@@ -59,10 +59,8 @@ Run the RECONeer.py script:
     The AI will generate a summary or analysis based on your prompt and display the output in the console.
     You can continue analyzing additional PDF documents or exit the program.
 
-# License
 
-This project is licensed under the MIT License.
-Acknowledgements
+# Acknowledgements
 
   Anthropic for providing the AI-powered chat interface.
     Selenium for web scraping functionality.
