@@ -1,7 +1,8 @@
 # RECONeer
 
 RECONeer is a Python program that automates the process of searching for PDF documents and social media profiles related to a given search query. It utilizes web scraping techniques to extract relevant information from Google search results.
-Features
+
+# Features
 
 Search for PDF documents based on a user-provided search query
 Option to perform a wide lookup or a specific lookup for PDF documents
@@ -34,8 +35,8 @@ Required Python libraries: requests, PyPDF2, colorama, ascii_magic, anthropic
     pip install -r requirements.txt
 
 # Set up the Anthropic API key:
-        Sign up for an Anthropic API account and obtain an API key.
-        Replace "your-api-key" in the RECONeerChat.py file with your actual API key.
+ Sign up for an Anthropic API account and obtain an API key.
+ Replace "your-api-key" in the RECONeerChat.py file with your actual API key.
 
 # Usage
 
@@ -45,7 +46,7 @@ Run the RECONeer.py script:
 
     python RECONeer.py
 
-    Enter the search query when prompted.
+   Enter the search query when prompted.
     Choose the type of search:
         Enter 1 for a wide lookup (searches for the query along with "filetype:pdf").
         Enter 2 for a specific lookup (searches for the exact query within quotes along with "filetype:pdf").
