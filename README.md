@@ -67,7 +67,7 @@ Run the RECONeer.py script:
   * PyPDF2 for PDF extraction and manipulation.
   * colorama for color output in the console.
   * ascii_magic for displaying ASCII art.
-  * [https://github.com/tpoff/Python-Gif-Ascii-Animator](GIF to ASCII by tpoff)
+  * (gif to ascii by tpoff)[https://github.com/tpoff/Python-Gif-Ascii-Animator]
 
 # Disclaimer
 
