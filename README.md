@@ -1,57 +1,74 @@
 # RECONeer
 
-RECONeer is a Python script that performs reconnaissance tasks by searching for PDF files and social media profiles related to a given search query. It utilizes the Selenium WebDriver to automate web browsing and scraping tasks.
+RECONeer is a Python program that automates the process of searching for PDF documents and social media profiles related to a given search query. It utilizes web scraping techniques to extract relevant information from Google search results.
 Features
-* Searches for PDF files related to the provided search query on Google
-    
-* Supports two types of search: Wide Lookup and Specific Lookup
 
-* Downloads the found PDF files and saves them in a directory named "downloaded_pdfs"
-    
-* Searches for social media profiles (Facebook, Twitter, Instagram, LinkedIn) related to the search query
-    
-* Prints the URLs of the found social media profiles
+Search for PDF documents based on a user-provided search query
+Option to perform a wide lookup or a specific lookup for PDF documents
+Download and save the found PDF files locally
+Search for social media profiles (Facebook, Twitter, Instagram, LinkedIn) related to the search query
+Display the URLs of the found social media profiles
+Analyze the downloaded PDF documents using an AI-powered chat interface
 
 # Prerequisites
 
-Before running the script, make sure you have the following dependencies installed:
- * Python 3.x
-    
- * Selenium WebDriver
-    
- * Chrome WebDriver (chromedriver) executable in the system PATH
-    
- *  Required Python packages: os, requests, selenium, transliterate
+Before running the program, make sure you have the following dependencies installed:
+
+Python (version 3.x)
+Selenium WebDriver
+Chrome browser
+Required Python libraries: requests, PyPDF2, colorama, ascii_magic, anthropic
+
+# Installation
+
+ Clone the repository:
+
+    shell
+
+    git clone https://github.com/your-username/RECONeer.git
+
+# Install the required Python libraries:
+
+    shell
+
+    pip install -r requirements.txt
+
+# Set up the Anthropic API key:
+        Sign up for an Anthropic API account and obtain an API key.
+        Replace "your-api-key" in the RECONeerChat.py file with your actual API key.
 
 # Usage
 
-  1. Clone the repository or download the script file.
-  2. Install the required dependencies by running the following command:     ```pip install selenium transliterate```
-  3. Make sure you have the Chrome WebDriver executable (chromedriver) in your system PATH or in the same directory as the script.
-  4. Run the script using the following command:
-    ```
-    python reconeer.py
-    ```
-  5. When prompted, enter the name or search query you want to perform reconnaissance on.
-  6. Choose the type of search by entering 1 for Wide Lookup or 2 for Specific Lookup.
-  7. The script will start the Chrome browser and perform the searches automatically.
-  8. The found PDF files will be downloaded and saved in the "downloaded_pdfs" directory.
-    The URLs of the found social media profiles will be printed in the console.
-    Once the script finishes executing, the browser will be closed automatically.
+Run the RECONeer.py script:
 
-# Notes
-   The script uses the Chrome WebDriver by default. If you prefer to use a different browser, you need to install the corresponding WebDriver and update the code accordingly.
-    The script handles exceptions and prints "NO RESULTS FOUND" if no PDF files or social media profiles are found for the given search query.
-    The downloaded PDF files are named in the format "searchquery_number.pdf" to avoid overwriting files with the same name.
-    The script waits for a maximum of 10 seconds for the search results to load. If the results take longer to load, you may need to increase the timeout value in the WebDriverWait function.
+    shell
 
-# Disclaimer
+    python RECONeer.py
 
-Please use this script responsibly and in compliance with the terms of service of the websites being scraped. Respect the privacy and intellectual property rights of others.
+    Enter the search query when prompted.
+    Choose the type of search:
+        Enter 1 for a wide lookup (searches for the query along with "filetype:pdf").
+        Enter 2 for a specific lookup (searches for the exact query within quotes along with "filetype:pdf").
+    The program will search for PDF documents and social media profiles based on the provided query.
+    The found PDF files will be downloaded and saved in the downloaded_pdfs directory.
+    The URLs of the found social media profiles will be displayed in the console.
+    After the search is complete, the AI-powered chat interface (RECONeerChat.py) will open automatically.
+    In the chat interface, you can select a downloaded PDF document to analyze or input your own PDF body text as a string.
+    Provide a prompt or question to guide the AI in analyzing the selected PDF document.
+    The AI will generate a summary or analysis based on your prompt and display the output in the console.
+    You can continue analyzing additional PDF documents or exit the program.
 
 # License
 
 This project is licensed under the MIT License.
+Acknowledgements
 
-Feel free to contribute to the project by submitting pull requests or reporting issues on the GitHub repository.
-    
+  Anthropic for providing the AI-powered chat interface.
+    Selenium for web scraping functionality.
+    PyPDF2 for PDF extraction and manipulation.
+    colorama for color output in the console.
+    ascii_magic for displaying ASCII art.
+
+# Disclaimer
+
+Please use this program responsibly and respect the terms of service of the websites being scraped. The authors of this program are not responsible for any misuse or illegal activities conducted using this tool.
