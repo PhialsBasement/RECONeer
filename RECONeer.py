@@ -6,8 +6,15 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import transliterate
-
+from colorama import init as colorama_init
+from colorama import Fore
+from colorama import Style
+from ascii_magic import AsciiArt
+colorama_init()
 # Function to download PDF files
+my_art = AsciiArt.from_image('untitled-f000056.png')
+my_art.to_terminal(columns=80)
+print({Fore.YELLOW})
 def download_pdf(url, filename):
     try:
         response = requests.get(url)
