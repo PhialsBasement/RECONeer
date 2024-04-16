@@ -33,12 +33,18 @@ driver = webdriver.Chrome()
 search_query = input("Enter the name ")
 # Ask for type of search
 TSearch = input("Enter 1 for Wide Lookup, 2 for Specific Lookup")
-social_media_search_url = f'''https://www.google.com/search?q=%22{search_query}%22+site%3Afacebook.com+OR+site%3Atwitter.com+OR+site%3Ainstagram.com+OR+site%3Alinkedin.com'''
+start_date = input("Enter the start date (YYYY-MM-DD) or press Enter to skip: ")
+end_date = input("Enter the end date (YYYY-MM-DD) or press Enter to skip: ")
+if start_date and end_date:
+    date_range = f"+before%3A{end_date}+after%3A{start_date}"
+else:
+    date_range = ""
+social_media_search_url = f'''https://www.google.com/search?q=%22{search_query}%22+site%3Afacebook.com+OR+site%3Atwitter.com+OR+site%3Ainstagram.com+OR+site%3Alinkedin.com{date_range}'''
 # Construct the Google search URL with the PDF dork
 if int(TSearch) == 1:
-    search_url = f"https://www.google.com/search?q={search_query}+filetype:pdf"
+    search_url = f"https://www.google.com/search?q={search_query}+filetype:pdf{date_range}"
 else:
-    search_url = f'''https://www.google.com/search?q="{search_query}"+filetype:pdf'''
+    search_url = f'''https://www.google.com/search?q="{search_query}"+filetype:pdf{date_range}'''
 try:
     # Navigate to the Google search URL
     driver.get(search_url)
