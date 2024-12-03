@@ -1,1 +1,1 @@
-{"content": "Modified with Claude Desktop", "encoding": "utf-8"}
+Modified with Claude Desktop
